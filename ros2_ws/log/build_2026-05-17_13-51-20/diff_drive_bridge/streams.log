@@ -1,0 +1,23 @@
+[4.118s] Invoking command in '/home/robotics_lab/ros2_ws/build/diff_drive_bridge': PYTHONPATH=/home/robotics_lab/ros2_ws/build/diff_drive_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/diff_drive_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics_lab/ros2_ws/build/diff_drive_bridge/build --no-deps symlink_data --force
+[4.723s] running develop
+[5.211s] running egg_info
+[5.212s] writing diff_drive_bridge.egg-info/PKG-INFO
+[5.213s] writing dependency_links to diff_drive_bridge.egg-info/dependency_links.txt
+[5.213s] writing entry points to diff_drive_bridge.egg-info/entry_points.txt
+[5.213s] writing requirements to diff_drive_bridge.egg-info/requires.txt
+[5.214s] writing top-level names to diff_drive_bridge.egg-info/top_level.txt
+[5.218s] reading manifest file 'diff_drive_bridge.egg-info/SOURCES.txt'
+[5.220s] writing manifest file 'diff_drive_bridge.egg-info/SOURCES.txt'
+[5.308s] running build_ext
+[5.310s] Creating /home/robotics_lab/ros2_ws/install/diff_drive_bridge/lib/python3.10/site-packages/diff-drive-bridge.egg-link (link to .)
+[5.310s] Installing diff_drive_bridge script to /home/robotics_lab/ros2_ws/install/diff_drive_bridge/lib/diff_drive_bridge
+[5.311s] Installing noodom_diff_drive_bridge script to /home/robotics_lab/ros2_ws/install/diff_drive_bridge/lib/diff_drive_bridge
+[5.312s] Installing scan_rotator script to /home/robotics_lab/ros2_ws/install/diff_drive_bridge/lib/diff_drive_bridge
+[5.312s] 
+[5.313s] Installed /home/robotics_lab/ros2_ws/build/diff_drive_bridge
+[5.313s] running symlink_data
+[5.316s] symbolically linking /home/robotics_lab/ros2_ws/build/diff_drive_bridge/resource/diff_drive_bridge -> /home/robotics_lab/ros2_ws/install/diff_drive_bridge/share/ament_index/resource_index/packages
+[5.316s] symbolically linking /home/robotics_lab/ros2_ws/build/diff_drive_bridge/package.xml -> /home/robotics_lab/ros2_ws/install/diff_drive_bridge/share/diff_drive_bridge
+[5.317s] symbolically linking /home/robotics_lab/ros2_ws/build/diff_drive_bridge/launch/robot_bringup.launch.py -> /home/robotics_lab/ros2_ws/install/diff_drive_bridge/share/diff_drive_bridge/launch
+[5.317s] symbolically linking /home/robotics_lab/ros2_ws/build/diff_drive_bridge/launch/headless_robot_bringup.launch.py -> /home/robotics_lab/ros2_ws/install/diff_drive_bridge/share/diff_drive_bridge/launch
+[5.464s] Invoked command in '/home/robotics_lab/ros2_ws/build/diff_drive_bridge' returned '0': PYTHONPATH=/home/robotics_lab/ros2_ws/build/diff_drive_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/diff_drive_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics_lab/ros2_ws/build/diff_drive_bridge/build --no-deps symlink_data --force

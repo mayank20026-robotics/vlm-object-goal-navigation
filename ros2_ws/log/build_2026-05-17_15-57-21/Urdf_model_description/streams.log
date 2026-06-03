@@ -1,0 +1,47 @@
+[4.143s] Invoking command in '/home/robotics_lab/ros2_ws/build/Urdf_model_description': PYTHONPATH=/home/robotics_lab/ros2_ws/build/Urdf_model_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/Urdf_model_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics_lab/ros2_ws/build/Urdf_model_description/build
+[4.681s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[4.681s]   warnings.warn(
+[4.739s] running develop
+[5.205s] Removing /home/robotics_lab/ros2_ws/install/Urdf_model_description/lib/python3.10/site-packages/Urdf-model-description.egg-link (link to .)
+[5.302s] Invoked command in '/home/robotics_lab/ros2_ws/build/Urdf_model_description' returned '0': PYTHONPATH=/home/robotics_lab/ros2_ws/build/Urdf_model_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/Urdf_model_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics_lab/ros2_ws/build/Urdf_model_description/build
+[5.303s] Invoking command in '/home/robotics_lab/ros2_ws/src/Urdf_model_description': PYTHONPATH=/home/robotics_lab/ros2_ws/build/Urdf_model_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/Urdf_model_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/Urdf_model_description build --build-base /home/robotics_lab/ros2_ws/build/Urdf_model_description/build install --record /home/robotics_lab/ros2_ws/build/Urdf_model_description/install.log --install-scripts $base/lib/Urdf_model_description --single-version-externally-managed install_data --force
+[5.855s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[5.856s]   warnings.warn(
+[5.874s] running egg_info
+[5.876s] writing ../../build/Urdf_model_description/Urdf_model_description.egg-info/PKG-INFO
+[5.876s] writing dependency_links to ../../build/Urdf_model_description/Urdf_model_description.egg-info/dependency_links.txt
+[5.877s] writing entry points to ../../build/Urdf_model_description/Urdf_model_description.egg-info/entry_points.txt
+[5.877s] writing requirements to ../../build/Urdf_model_description/Urdf_model_description.egg-info/requires.txt
+[5.877s] writing top-level names to ../../build/Urdf_model_description/Urdf_model_description.egg-info/top_level.txt
+[5.883s] reading manifest file '../../build/Urdf_model_description/Urdf_model_description.egg-info/SOURCES.txt'
+[5.885s] writing manifest file '../../build/Urdf_model_description/Urdf_model_description.egg-info/SOURCES.txt'
+[5.886s] running build
+[5.886s] running build_py
+[5.887s] running install
+[5.888s] running install_lib
+[5.889s] creating /home/robotics_lab/ros2_ws/install/Urdf_model_description/lib/python3.10/site-packages/Urdf_model_description
+[5.889s] copying /home/robotics_lab/ros2_ws/build/Urdf_model_description/build/lib/Urdf_model_description/__init__.py -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/lib/python3.10/site-packages/Urdf_model_description
+[5.891s] byte-compiling /home/robotics_lab/ros2_ws/install/Urdf_model_description/lib/python3.10/site-packages/Urdf_model_description/__init__.py to __init__.cpython-310.pyc
+[5.891s] running install_data
+[5.891s] copying resource/Urdf_model_description -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/ament_index/resource_index/packages
+[5.892s] copying package.xml -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description
+[5.892s] copying launch/mapless_nav2.launch.py -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/launch
+[5.893s] copying launch/display.launch.py -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/launch
+[5.893s] copying launch/gazebo.launch.py -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/launch
+[5.894s] copying urdf/Urdf_model.gazebo -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/urdf
+[5.894s] copying urdf/Urdf_model.trans -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/urdf
+[5.894s] copying urdf/Urdf_model.xacro -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/urdf
+[5.894s] copying urdf/materials.xacro -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/urdf
+[5.894s] copying meshes/base_link.stl -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/meshes
+[5.896s] copying meshes/rplidar_a1_1.stl -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/meshes
+[5.896s] copying meshes/left_wheel_1.stl -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/meshes
+[5.897s] copying meshes/right_wheel_1.stl -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/meshes
+[5.899s] copying meshes/oak_d_lite_cam_1.stl -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/meshes
+[5.899s] copying config/nav2_params.yaml -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/config
+[5.899s] copying config/oak_pcl.yaml -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/config
+[5.900s] copying config/display.rviz -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/config
+[5.900s] running install_egg_info
+[5.905s] Copying ../../build/Urdf_model_description/Urdf_model_description.egg-info to /home/robotics_lab/ros2_ws/install/Urdf_model_description/lib/python3.10/site-packages/Urdf_model_description-0.0.0-py3.10.egg-info
+[5.907s] running install_scripts
+[5.952s] writing list of installed files to '/home/robotics_lab/ros2_ws/build/Urdf_model_description/install.log'
+[6.050s] Invoked command in '/home/robotics_lab/ros2_ws/src/Urdf_model_description' returned '0': PYTHONPATH=/home/robotics_lab/ros2_ws/build/Urdf_model_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/Urdf_model_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/Urdf_model_description build --build-base /home/robotics_lab/ros2_ws/build/Urdf_model_description/build install --record /home/robotics_lab/ros2_ws/build/Urdf_model_description/install.log --install-scripts $base/lib/Urdf_model_description --single-version-externally-managed install_data --force

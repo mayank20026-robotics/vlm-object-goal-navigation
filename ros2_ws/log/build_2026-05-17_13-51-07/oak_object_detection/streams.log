@@ -1,0 +1,47 @@
+[4.030s] Invoking command in '/home/robotics_lab/ros2_ws/build/oak_object_detection': PYTHONPATH=/home/robotics_lab/ros2_ws/build/oak_object_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics_lab/ros2_ws/build/oak_object_detection/build
+[4.664s] running develop
+[5.155s] Removing /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak-object-detection.egg-link (link to .)
+[5.337s] Invoked command in '/home/robotics_lab/ros2_ws/build/oak_object_detection' returned '0': PYTHONPATH=/home/robotics_lab/ros2_ws/build/oak_object_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics_lab/ros2_ws/build/oak_object_detection/build
+[5.337s] Invoking command in '/home/robotics_lab/ros2_ws/src/oak_object_detection': PYTHONPATH=/home/robotics_lab/ros2_ws/build/oak_object_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/oak_object_detection build --build-base /home/robotics_lab/ros2_ws/build/oak_object_detection/build install --record /home/robotics_lab/ros2_ws/build/oak_object_detection/install.log --single-version-externally-managed install_data --force
+[6.148s] running egg_info
+[6.150s] writing ../../build/oak_object_detection/oak_object_detection.egg-info/PKG-INFO
+[6.151s] writing dependency_links to ../../build/oak_object_detection/oak_object_detection.egg-info/dependency_links.txt
+[6.152s] writing entry points to ../../build/oak_object_detection/oak_object_detection.egg-info/entry_points.txt
+[6.153s] writing requirements to ../../build/oak_object_detection/oak_object_detection.egg-info/requires.txt
+[6.153s] writing top-level names to ../../build/oak_object_detection/oak_object_detection.egg-info/top_level.txt
+[6.160s] reading manifest file '../../build/oak_object_detection/oak_object_detection.egg-info/SOURCES.txt'
+[6.163s] writing manifest file '../../build/oak_object_detection/oak_object_detection.egg-info/SOURCES.txt'
+[6.164s] running build
+[6.164s] running build_py
+[6.167s] running install
+[6.169s] running install_lib
+[6.172s] creating /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection
+[6.173s] creating /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes
+[6.173s] copying /home/robotics_lab/ros2_ws/build/oak_object_detection/build/lib/oak_object_detection/tested codes/vlm_depth_commander.py -> /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes
+[6.174s] copying /home/robotics_lab/ros2_ws/build/oak_object_detection/build/lib/oak_object_detection/tested codes/vlm_hybrid_commander.py -> /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes
+[6.175s] copying /home/robotics_lab/ros2_ws/build/oak_object_detection/build/lib/oak_object_detection/tested codes/oakd_spatial_node.py -> /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes
+[6.176s] copying /home/robotics_lab/ros2_ws/build/oak_object_detection/build/lib/oak_object_detection/tested codes/__init__.py -> /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes
+[6.177s] copying /home/robotics_lab/ros2_ws/build/oak_object_detection/build/lib/oak_object_detection/tested codes/capture_frame.py -> /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes
+[6.177s] copying /home/robotics_lab/ros2_ws/build/oak_object_detection/build/lib/oak_object_detection/tested codes/vlm_bridge_test.py -> /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes
+[6.178s] copying /home/robotics_lab/ros2_ws/build/oak_object_detection/build/lib/oak_object_detection/__init__.py -> /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection
+[6.179s] copying /home/robotics_lab/ros2_ws/build/oak_object_detection/build/lib/oak_object_detection/yolo_commander.py -> /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection
+[6.180s] copying /home/robotics_lab/ros2_ws/build/oak_object_detection/build/lib/oak_object_detection/yolo_vlm_commander.py -> /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection
+[6.182s] byte-compiling /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes/vlm_depth_commander.py to vlm_depth_commander.cpython-310.pyc
+[6.184s] byte-compiling /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes/vlm_hybrid_commander.py to vlm_hybrid_commander.cpython-310.pyc
+[6.185s] byte-compiling /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes/oakd_spatial_node.py to oakd_spatial_node.cpython-310.pyc
+[6.187s] byte-compiling /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes/__init__.py to __init__.cpython-310.pyc
+[6.188s] byte-compiling /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes/capture_frame.py to capture_frame.cpython-310.pyc
+[6.190s] byte-compiling /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes/vlm_bridge_test.py to vlm_bridge_test.cpython-310.pyc
+[6.192s] byte-compiling /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/__init__.py to __init__.cpython-310.pyc
+[6.193s] byte-compiling /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/yolo_commander.py to yolo_commander.cpython-310.pyc
+[6.197s] byte-compiling /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/yolo_vlm_commander.py to yolo_vlm_commander.cpython-310.pyc
+[6.201s] running install_data
+[6.202s] copying resource/oak_object_detection -> /home/robotics_lab/ros2_ws/install/oak_object_detection/share/ament_index/resource_index/packages
+[6.203s] copying package.xml -> /home/robotics_lab/ros2_ws/install/oak_object_detection/share/oak_object_detection
+[6.204s] running install_egg_info
+[6.221s] Copying ../../build/oak_object_detection/oak_object_detection.egg-info to /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection-0.0.0-py3.10.egg-info
+[6.222s] running install_scripts
+[6.274s] Installing oakd_spatial_node script to /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/oak_object_detection
+[6.274s] Installing vlm_depth_commander script to /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/oak_object_detection
+[6.275s] writing list of installed files to '/home/robotics_lab/ros2_ws/build/oak_object_detection/install.log'
+[6.347s] Invoked command in '/home/robotics_lab/ros2_ws/src/oak_object_detection' returned '0': PYTHONPATH=/home/robotics_lab/ros2_ws/build/oak_object_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/oak_object_detection build --build-base /home/robotics_lab/ros2_ws/build/oak_object_detection/build install --record /home/robotics_lab/ros2_ws/build/oak_object_detection/install.log --single-version-externally-managed install_data --force

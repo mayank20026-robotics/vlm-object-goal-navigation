@@ -1,0 +1,89 @@
+import os
+import json
+import base64
+import cv2
+from openai import OpenAI
+
+def main():
+    print("\n" + "="*50)
+    print("👁️  QWEN VISION PIPELINE: PURE INFERENCE TEST")
+    print("="*50)
+    
+    target_object = input("What object should Qwen look for?: ")
+    
+    # 1. Load the test image (using the one you already have)
+    base_path = os.path.expanduser("~/ros2_ws/src/oak_object_detection/oak_object_detection/")
+    image_path = os.path.join(base_path, "vlm_test_frame.jpg")
+    
+    if not os.path.exists(image_path):
+        print(f"❌ Error: Could not find image at {image_path}")
+        return
+
+    # 2. Encode to Base64
+    print("\nEncoding image...")
+    with open(image_path, "rb") as image_file:
+        base64_image = base64.b64encode(image_file.read()).decode('utf-8')
+
+    # 3. Connect to Mac (CHANGE THIS IP TO YOUR MAC'S ANDROID HOTSPOT IP)
+    client = OpenAI(
+        base_url="http://192.168.x.x:11434/v1",  # <--- UPDATE THIS
+        api_key="sk-no-key-required"
+    )
+
+    # 4. The strict JSON prompt tailored for Qwen
+    prompt = f"""
+    Look closely at this image. Search for: "{target_object}".
+    The image resolution is 1280x720. 
+    
+    If the object is PRESENT: Estimate the center pixel coordinates (u for horizontal, v for vertical).
+    If the object is NOT PRESENT: Return false.
+    
+    You must respond ONLY with a raw JSON object. Do not include markdown formatting, backticks, or conversational text.
+    
+    Success format: {{"found": true, "u": 640, "v": 360}}
+    Failure format: {{"found": false}}
+    """
+
+    print(f"📡 Transmitting to Mac M1 (Model: qwen2.5vl:3b)...")
+    
+    try:
+        response = client.chat.completions.create(
+            model="qwen2.5vl:3b",
+            messages=[
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "text", "text": prompt},
+                        {
+                            "type": "image_url",
+                            "image_url": {
+                                "url": f"data:image/jpeg;base64,{base64_image}"
+                            }
+                        }
+                    ]
+                }
+            ],
+            max_tokens=50,
+            temperature=0.0  # Zero temperature forces strict, robotic JSON compliance
+       
+        # Clean the output in case Qwen accidentally adds markdown backticks
+        raw_output = response.choices[0].message.content.strip().replace("```json", "").replace("
+```", "")
+        # Parse the JSON
+        result = json.loads(raw_output)
+        # 5. Output the verdict
+        print("\n" + "="*50)
+        if result.get("found"):
+            u = result.get("u")
+            v = result.get("v")
+            print(f"✅ TARGET ACQUIRED!")
+            print(f"📍 Coordinates: X (u): {u}, Y (v): {v}")
+        else:
+            print(f"❌ TARGET NOT FOUND (or path blocked).")
+        print("="*50 + "\n")
+
+    except Exception as e:
+        print(f"\n🚨 Connection or Parsing Error: {e}")
+
+if __name__ == "__main__":
+    main()

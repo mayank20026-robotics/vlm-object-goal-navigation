@@ -1,0 +1,22 @@
+[4.277s] Invoking command in '/home/robotics_lab/ros2_ws/src/oak_object_detection': PYTHONPATH=/home/robotics_lab/ros2_ws/build/oak_object_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/oak_object_detection build --build-base /home/robotics_lab/ros2_ws/build/oak_object_detection/build install --record /home/robotics_lab/ros2_ws/build/oak_object_detection/install.log --single-version-externally-managed install_data
+[4.889s] running egg_info
+[4.891s] writing ../../build/oak_object_detection/oak_object_detection.egg-info/PKG-INFO
+[4.892s] writing dependency_links to ../../build/oak_object_detection/oak_object_detection.egg-info/dependency_links.txt
+[4.892s] writing entry points to ../../build/oak_object_detection/oak_object_detection.egg-info/entry_points.txt
+[4.893s] writing requirements to ../../build/oak_object_detection/oak_object_detection.egg-info/requires.txt
+[4.893s] writing top-level names to ../../build/oak_object_detection/oak_object_detection.egg-info/top_level.txt
+[4.897s] reading manifest file '../../build/oak_object_detection/oak_object_detection.egg-info/SOURCES.txt'
+[4.899s] writing manifest file '../../build/oak_object_detection/oak_object_detection.egg-info/SOURCES.txt'
+[4.899s] running build
+[4.900s] running build_py
+[4.901s] running install
+[4.902s] running install_lib
+[4.905s] running install_data
+[4.905s] running install_egg_info
+[4.909s] removing '/home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection-0.0.0-py3.10.egg-info' (and everything under it)
+[4.910s] Copying ../../build/oak_object_detection/oak_object_detection.egg-info to /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection-0.0.0-py3.10.egg-info
+[4.912s] running install_scripts
+[4.956s] Installing oakd_spatial_node script to /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/oak_object_detection
+[4.956s] Installing vlm_depth_commander script to /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/oak_object_detection
+[4.957s] writing list of installed files to '/home/robotics_lab/ros2_ws/build/oak_object_detection/install.log'
+[5.040s] Invoked command in '/home/robotics_lab/ros2_ws/src/oak_object_detection' returned '0': PYTHONPATH=/home/robotics_lab/ros2_ws/build/oak_object_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/oak_object_detection build --build-base /home/robotics_lab/ros2_ws/build/oak_object_detection/build install --record /home/robotics_lab/ros2_ws/build/oak_object_detection/install.log --single-version-externally-managed install_data

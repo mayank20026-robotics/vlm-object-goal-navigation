@@ -1,0 +1,24 @@
+[4.217s] Invoking command in '/home/robotics_lab/ros2_ws/src/diff_drive_bridge': PYTHONPATH=/home/robotics_lab/ros2_ws/build/diff_drive_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/diff_drive_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/diff_drive_bridge build --build-base /home/robotics_lab/ros2_ws/build/diff_drive_bridge/build install --record /home/robotics_lab/ros2_ws/build/diff_drive_bridge/install.log --single-version-externally-managed install_data
+[4.756s] running egg_info
+[4.757s] writing ../../build/diff_drive_bridge/diff_drive_bridge.egg-info/PKG-INFO
+[4.759s] writing dependency_links to ../../build/diff_drive_bridge/diff_drive_bridge.egg-info/dependency_links.txt
+[4.759s] writing entry points to ../../build/diff_drive_bridge/diff_drive_bridge.egg-info/entry_points.txt
+[4.759s] writing requirements to ../../build/diff_drive_bridge/diff_drive_bridge.egg-info/requires.txt
+[4.759s] writing top-level names to ../../build/diff_drive_bridge/diff_drive_bridge.egg-info/top_level.txt
+[4.764s] reading manifest file '../../build/diff_drive_bridge/diff_drive_bridge.egg-info/SOURCES.txt'
+[4.766s] writing manifest file '../../build/diff_drive_bridge/diff_drive_bridge.egg-info/SOURCES.txt'
+[4.766s] running build
+[4.767s] running build_py
+[4.768s] running install
+[4.770s] running install_lib
+[4.773s] running install_data
+[4.774s] copying launch/headless_robot_bringup.launch.py -> /home/robotics_lab/ros2_ws/install/diff_drive_bridge/share/diff_drive_bridge/launch
+[4.775s] running install_egg_info
+[4.779s] removing '/home/robotics_lab/ros2_ws/install/diff_drive_bridge/lib/python3.10/site-packages/diff_drive_bridge-0.0.0-py3.10.egg-info' (and everything under it)
+[4.780s] Copying ../../build/diff_drive_bridge/diff_drive_bridge.egg-info to /home/robotics_lab/ros2_ws/install/diff_drive_bridge/lib/python3.10/site-packages/diff_drive_bridge-0.0.0-py3.10.egg-info
+[4.782s] running install_scripts
+[4.825s] Installing diff_drive_bridge script to /home/robotics_lab/ros2_ws/install/diff_drive_bridge/lib/diff_drive_bridge
+[4.825s] Installing noodom_diff_drive_bridge script to /home/robotics_lab/ros2_ws/install/diff_drive_bridge/lib/diff_drive_bridge
+[4.826s] Installing scan_rotator script to /home/robotics_lab/ros2_ws/install/diff_drive_bridge/lib/diff_drive_bridge
+[4.826s] writing list of installed files to '/home/robotics_lab/ros2_ws/build/diff_drive_bridge/install.log'
+[4.912s] Invoked command in '/home/robotics_lab/ros2_ws/src/diff_drive_bridge' returned '0': PYTHONPATH=/home/robotics_lab/ros2_ws/build/diff_drive_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/diff_drive_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/diff_drive_bridge build --build-base /home/robotics_lab/ros2_ws/build/diff_drive_bridge/build install --record /home/robotics_lab/ros2_ws/build/diff_drive_bridge/install.log --single-version-externally-managed install_data

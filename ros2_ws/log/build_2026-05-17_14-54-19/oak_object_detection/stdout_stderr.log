@@ -1,0 +1,43 @@
+running develop
+Removing /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak-object-detection.egg-link (link to .)
+running egg_info
+writing ../../build/oak_object_detection/oak_object_detection.egg-info/PKG-INFO
+writing dependency_links to ../../build/oak_object_detection/oak_object_detection.egg-info/dependency_links.txt
+writing entry points to ../../build/oak_object_detection/oak_object_detection.egg-info/entry_points.txt
+writing requirements to ../../build/oak_object_detection/oak_object_detection.egg-info/requires.txt
+writing top-level names to ../../build/oak_object_detection/oak_object_detection.egg-info/top_level.txt
+reading manifest file '../../build/oak_object_detection/oak_object_detection.egg-info/SOURCES.txt'
+writing manifest file '../../build/oak_object_detection/oak_object_detection.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection
+creating /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes
+copying /home/robotics_lab/ros2_ws/build/oak_object_detection/build/lib/oak_object_detection/tested codes/vlm_depth_commander.py -> /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes
+copying /home/robotics_lab/ros2_ws/build/oak_object_detection/build/lib/oak_object_detection/tested codes/vlm_hybrid_commander.py -> /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes
+copying /home/robotics_lab/ros2_ws/build/oak_object_detection/build/lib/oak_object_detection/tested codes/oakd_spatial_node.py -> /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes
+copying /home/robotics_lab/ros2_ws/build/oak_object_detection/build/lib/oak_object_detection/tested codes/__init__.py -> /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes
+copying /home/robotics_lab/ros2_ws/build/oak_object_detection/build/lib/oak_object_detection/tested codes/capture_frame.py -> /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes
+copying /home/robotics_lab/ros2_ws/build/oak_object_detection/build/lib/oak_object_detection/tested codes/vlm_bridge_test.py -> /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes
+copying /home/robotics_lab/ros2_ws/build/oak_object_detection/build/lib/oak_object_detection/__init__.py -> /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection
+copying /home/robotics_lab/ros2_ws/build/oak_object_detection/build/lib/oak_object_detection/yolo_commander.py -> /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection
+copying /home/robotics_lab/ros2_ws/build/oak_object_detection/build/lib/oak_object_detection/yolo_vlm_commander.py -> /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection
+byte-compiling /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes/vlm_depth_commander.py to vlm_depth_commander.cpython-310.pyc
+byte-compiling /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes/vlm_hybrid_commander.py to vlm_hybrid_commander.cpython-310.pyc
+byte-compiling /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes/oakd_spatial_node.py to oakd_spatial_node.cpython-310.pyc
+byte-compiling /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes/capture_frame.py to capture_frame.cpython-310.pyc
+byte-compiling /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/tested codes/vlm_bridge_test.py to vlm_bridge_test.cpython-310.pyc
+byte-compiling /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/yolo_commander.py to yolo_commander.cpython-310.pyc
+byte-compiling /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection/yolo_vlm_commander.py to yolo_vlm_commander.cpython-310.pyc
+running install_data
+copying resource/oak_object_detection -> /home/robotics_lab/ros2_ws/install/oak_object_detection/share/ament_index/resource_index/packages
+copying package.xml -> /home/robotics_lab/ros2_ws/install/oak_object_detection/share/oak_object_detection
+running install_egg_info
+Copying ../../build/oak_object_detection/oak_object_detection.egg-info to /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/python3.10/site-packages/oak_object_detection-0.0.0-py3.10.egg-info
+running install_scripts
+Installing oakd_spatial_node script to /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/oak_object_detection
+Installing vlm_depth_commander script to /home/robotics_lab/ros2_ws/install/oak_object_detection/lib/oak_object_detection
+writing list of installed files to '/home/robotics_lab/ros2_ws/build/oak_object_detection/install.log'

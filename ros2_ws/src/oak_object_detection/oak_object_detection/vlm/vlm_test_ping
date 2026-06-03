@@ -1,0 +1,157 @@
+#!/usr/bin/env python3
+import depthai as dai
+import cv2
+import base64
+import json
+import time
+from openai import OpenAI
+
+# --- CONFIGURATION ---
+fps = 20
+size = (640, 400)
+modelDescription = dai.NNModelDescription("yolov6-nano")
+TARGET_OBJECT = "laptop"
+
+COCO_LABELS = [
+    "person", "bicycle", "car", "motorcycle", "airplane", "bus", "train", "truck", "boat", "traffic light", 
+    "fire hydrant", "stop sign", "parking meter", "bench", "bird", "cat", "dog", "horse", "sheep", "cow", 
+    "elephant", "bear", "zebra", "giraffe", "backpack", "umbrella", "handbag", "tie", "suitcase", "frisbee", 
+    "skis", "snowboard", "sports ball", "kite", "baseball bat", "baseball glove", "skateboard", "surfboard", 
+    "tennis racket", "bottle", "wine glass", "cup", "fork", "knife", "spoon", "bowl", "banana", "apple", 
+    "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut", "cake", "chair", "couch", 
+    "potted plant", "bed", "dining table", "toilet", "tv", "laptop", "mouse", "remote", "keyboard", "cell phone", 
+    "microwave", "oven", "toaster", "sink", "refrigerator", "book", "clock", "vase", "scissors", "teddy bear", 
+    "hair drier", "toothbrush"
+]
+
+class SupervisorNode(dai.node.HostNode):
+    def __init__(self):
+        dai.node.HostNode.__init__(self)
+        self.sendProcessingToPipeline(True)
+        
+        # Connect to Mac VLM Server
+        self.vlm_client = OpenAI(
+            base_url="http://10.11.19.46:11434/v1",  # <--- Verify this IP!
+            api_key="sk-no-key-required",
+            timeout=10.0 # Fast timeout because the cropped image is tiny
+        )
+        self.last_vlm_check = 0
+        self.cooldown_seconds = 3 # Don't spam the Mac 20 times a second
+
+    def build(self, detection_out: dai.Node.Output, video_out: dai.Node.Output):
+        self.link_args(detection_out, video_out)
+
+    def process(self, detections, video_frame):
+        if detections is None or video_frame is None:
+            return
+
+        # Convert raw video frame to OpenCV format
+        cv_image = video_frame.getCvFrame()
+
+        for detection in detections.detections:
+            # 1. Grab YOLO's standard data
+            try:
+                object_name = COCO_LABELS[detection.label]
+            except IndexError:
+                object_name = "unknown"
+
+            # 2. Get the Bounding Box limits (Pixels)
+            # YOLO outputs normalized values (0.0 to 1.0), so we multiply by the resolution (640x400)
+            xmin = int(detection.xmin * 640)
+            ymin = int(detection.ymin * 400)
+            xmax = int(detection.xmax * 640)
+            ymax = int(detection.ymax * 400)
+
+            # Draw the YOLO box for our visual debug window
+            cv2.rectangle(cv_image, (xmin, ymin), (xmax, ymax), (255, 0, 0), 2)
+            cv2.putText(cv_image, object_name, (xmin, ymin - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
+
+            # --- THE VLM HANDOFF ---
+            # We only ask the VLM if the object is large enough, and if our cooldown timer is finished
+            if (xmax - xmin) > 50 and (ymax - ymin) > 50 and (time.time() - self.last_vlm_check > self.cooldown_seconds):
+                print(f"\n🔍 YOLO spotted a [{object_name}]. Asking VLM if it is the {TARGET_OBJECT}...")
+                
+                # 3. Slice just the bounding box out of the image!
+                cropped_roi = cv_image[ymin:ymax, xmin:xmax]
+                
+                # Encode the tiny crop
+                _, buffer = cv2.imencode('.jpg', cropped_roi)
+                base64_image = base64.b64encode(buffer).decode('utf-8')
+
+                prompt = f"""
+                You are a robotics verification system. 
+                Look at this tightly cropped image of an object.
+                Is this object a {TARGET_OBJECT}?
+                
+                Respond ONLY with a raw JSON object:
+                {{"is_target": true}} or {{"is_target": false}}
+                """
+                
+                try:
+                    response = self.vlm_client.chat.completions.create(
+                        model="qwen2.5vl:3b",
+                        messages=[
+                            {"role": "user", "content": [
+                                {"type": "text", "text": prompt},
+                                {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{base64_image}"}}
+                            ]}
+                        ],
+                        max_tokens=20,
+                        temperature=0.0
+                    )
+                    
+                    clean_text = response.choices[0].message.content.strip().replace("```json", "").replace("```", "")
+                    result = json.loads(clean_text)
+                    
+                    if result.get("is_target"):
+                        x_m = detection.spatialCoordinates.x / 1000.0
+                        y_m = detection.spatialCoordinates.y / 1000.0
+                        z_m = detection.spatialCoordinates.z / 1000.0
+                        
+                        print(f"✅ VLM CONFIRMED! Target locked.")
+                        print(f"📍 EXACT 3D WAYPOINT (from YOLO): X (lat): {x_m:.2f}m | Y (up): {y_m:.2f}m | Z (fwd): {z_m:.2f}m")
+                        print(">>> INITIATING DRIVE COMMAND <<<")
+                        # You would break/return here and send the goal to ROS 2!
+                        self.last_vlm_check = time.time() + 10 # Long pause if we found it
+                    else:
+                        print(f"❌ VLM says NO. It is just a {object_name}. Resuming search...")
+                        self.last_vlm_check = time.time()
+
+                except Exception as e:
+                    print(f"⚠️ VLM Server Hiccup: {e}")
+                    self.last_vlm_check = time.time()
+
+        # Display the live feed so you can see what the robot sees
+        cv2.imshow("Supervisor Pattern View", cv_image)
+        cv2.waitKey(1)
+
+# --- PIPELINE CONSTRUCTION ---
+with dai.Pipeline() as pipeline:
+    rgbcamera = pipeline.create(dai.node.Camera).build(dai.CameraBoardSocket.CAM_A, sensorFps=fps)
+    monoleft = pipeline.create(dai.node.Camera).build(dai.CameraBoardSocket.CAM_B, sensorFps=fps)
+    monoright = pipeline.create(dai.node.Camera).build(dai.CameraBoardSocket.CAM_C, sensorFps=fps)
+
+    stereo_depth = pipeline.create(dai.node.StereoDepth)
+    stereo_depth.setExtendedDisparity(True)
+
+    monoleft.requestOutput(size).link(stereo_depth.left)
+    monoright.requestOutput(size).link(stereo_depth.right)
+
+    spatial_detection = pipeline.create(dai.node.SpatialDetectionNetwork).build(rgbcamera, stereo_depth, modelDescription)
+    spatial_detection.spatialLocationCalculator.initialConfig.setSegmentationPassthrough(False)
+    spatial_detection.input.setBlocking(False)
+    spatial_detection.setDepthLowerThreshold(100)
+    spatial_detection.setDepthUpperThreshold(5000)
+    
+    # Send the raw RGB video stream AND the YOLO detections to our custom Python node
+    video_out = rgbcamera.requestOutput(size)
+    
+    reciever = pipeline.create(SupervisorNode)
+    reciever.build(spatial_detection.out, video_out)
+
+    print("\n" + "="*50)
+    print("🧠 YOLO + VLM SUPERVISOR ARCHITECTURE ONLINE")
+    print("="*50)
+    print("Camera ignited! Waiting for objects to interrogate...")
+
+    pipeline.run()

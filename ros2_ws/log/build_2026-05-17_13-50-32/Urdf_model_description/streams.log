@@ -1,0 +1,34 @@
+[4.174s] Invoking command in '/home/robotics_lab/ros2_ws/build/Urdf_model_description': PYTHONPATH=/home/robotics_lab/ros2_ws/build/Urdf_model_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/Urdf_model_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics_lab/ros2_ws/build/Urdf_model_description/build --no-deps symlink_data --force
+[4.757s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[4.757s]   warnings.warn(
+[4.831s] running develop
+[5.322s] running egg_info
+[5.322s] writing Urdf_model_description.egg-info/PKG-INFO
+[5.324s] writing dependency_links to Urdf_model_description.egg-info/dependency_links.txt
+[5.324s] writing entry points to Urdf_model_description.egg-info/entry_points.txt
+[5.324s] writing requirements to Urdf_model_description.egg-info/requires.txt
+[5.324s] writing top-level names to Urdf_model_description.egg-info/top_level.txt
+[5.330s] reading manifest file 'Urdf_model_description.egg-info/SOURCES.txt'
+[5.333s] writing manifest file 'Urdf_model_description.egg-info/SOURCES.txt'
+[5.439s] running build_ext
+[5.439s] Creating /home/robotics_lab/ros2_ws/install/Urdf_model_description/lib/python3.10/site-packages/Urdf-model-description.egg-link (link to .)
+[5.442s] 
+[5.442s] Installed /home/robotics_lab/ros2_ws/build/Urdf_model_description
+[5.442s] running symlink_data
+[5.442s] symbolically linking /home/robotics_lab/ros2_ws/build/Urdf_model_description/resource/Urdf_model_description -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/ament_index/resource_index/packages
+[5.443s] symbolically linking /home/robotics_lab/ros2_ws/build/Urdf_model_description/package.xml -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description
+[5.443s] symbolically linking /home/robotics_lab/ros2_ws/build/Urdf_model_description/launch/mapless_nav2.launch.py -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/launch
+[5.444s] symbolically linking /home/robotics_lab/ros2_ws/build/Urdf_model_description/launch/display.launch.py -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/launch
+[5.444s] symbolically linking /home/robotics_lab/ros2_ws/build/Urdf_model_description/launch/gazebo.launch.py -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/launch
+[5.445s] symbolically linking /home/robotics_lab/ros2_ws/build/Urdf_model_description/urdf/Urdf_model.gazebo -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/urdf
+[5.445s] symbolically linking /home/robotics_lab/ros2_ws/build/Urdf_model_description/urdf/Urdf_model.trans -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/urdf
+[5.445s] symbolically linking /home/robotics_lab/ros2_ws/build/Urdf_model_description/urdf/Urdf_model.xacro -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/urdf
+[5.446s] symbolically linking /home/robotics_lab/ros2_ws/build/Urdf_model_description/urdf/materials.xacro -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/urdf
+[5.446s] symbolically linking /home/robotics_lab/ros2_ws/build/Urdf_model_description/meshes/base_link.stl -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/meshes
+[5.446s] symbolically linking /home/robotics_lab/ros2_ws/build/Urdf_model_description/meshes/rplidar_a1_1.stl -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/meshes
+[5.447s] symbolically linking /home/robotics_lab/ros2_ws/build/Urdf_model_description/meshes/left_wheel_1.stl -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/meshes
+[5.447s] symbolically linking /home/robotics_lab/ros2_ws/build/Urdf_model_description/meshes/right_wheel_1.stl -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/meshes
+[5.448s] symbolically linking /home/robotics_lab/ros2_ws/build/Urdf_model_description/meshes/oak_d_lite_cam_1.stl -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/meshes
+[5.448s] symbolically linking /home/robotics_lab/ros2_ws/build/Urdf_model_description/config/nav2_params.yaml -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/config
+[5.448s] error: [Errno 2] No such file or directory: '/home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/config/oak_pcl.yaml'
+[5.604s] Invoked command in '/home/robotics_lab/ros2_ws/build/Urdf_model_description' returned '1': PYTHONPATH=/home/robotics_lab/ros2_ws/build/Urdf_model_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/Urdf_model_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics_lab/ros2_ws/build/Urdf_model_description/build --no-deps symlink_data --force

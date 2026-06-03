@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing diff_drive_bridge.egg-info/PKG-INFO
+writing dependency_links to diff_drive_bridge.egg-info/dependency_links.txt
+writing entry points to diff_drive_bridge.egg-info/entry_points.txt
+writing requirements to diff_drive_bridge.egg-info/requires.txt
+writing top-level names to diff_drive_bridge.egg-info/top_level.txt
+reading manifest file 'diff_drive_bridge.egg-info/SOURCES.txt'
+writing manifest file 'diff_drive_bridge.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/robotics_lab/ros2_ws/install/diff_drive_bridge/lib/python3.10/site-packages/diff-drive-bridge.egg-link (link to .)
+Installing diff_drive_bridge script to /home/robotics_lab/ros2_ws/install/diff_drive_bridge/lib/diff_drive_bridge
+Installing noodom_diff_drive_bridge script to /home/robotics_lab/ros2_ws/install/diff_drive_bridge/lib/diff_drive_bridge
+Installing scan_rotator script to /home/robotics_lab/ros2_ws/install/diff_drive_bridge/lib/diff_drive_bridge
+
+Installed /home/robotics_lab/ros2_ws/build/diff_drive_bridge
+running symlink_data

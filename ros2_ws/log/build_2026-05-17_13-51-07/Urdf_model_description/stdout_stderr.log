@@ -1,0 +1,43 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+Removing /home/robotics_lab/ros2_ws/install/Urdf_model_description/lib/python3.10/site-packages/Urdf-model-description.egg-link (link to .)
+running egg_info
+writing ../../build/Urdf_model_description/Urdf_model_description.egg-info/PKG-INFO
+writing dependency_links to ../../build/Urdf_model_description/Urdf_model_description.egg-info/dependency_links.txt
+writing entry points to ../../build/Urdf_model_description/Urdf_model_description.egg-info/entry_points.txt
+writing requirements to ../../build/Urdf_model_description/Urdf_model_description.egg-info/requires.txt
+writing top-level names to ../../build/Urdf_model_description/Urdf_model_description.egg-info/top_level.txt
+reading manifest file '../../build/Urdf_model_description/Urdf_model_description.egg-info/SOURCES.txt'
+writing manifest file '../../build/Urdf_model_description/Urdf_model_description.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/robotics_lab/ros2_ws/install/Urdf_model_description/lib/python3.10/site-packages/Urdf_model_description
+copying /home/robotics_lab/ros2_ws/build/Urdf_model_description/build/lib/Urdf_model_description/__init__.py -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/lib/python3.10/site-packages/Urdf_model_description
+byte-compiling /home/robotics_lab/ros2_ws/install/Urdf_model_description/lib/python3.10/site-packages/Urdf_model_description/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/Urdf_model_description -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/ament_index/resource_index/packages
+copying package.xml -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description
+copying launch/mapless_nav2.launch.py -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/launch
+copying launch/display.launch.py -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/launch
+copying launch/gazebo.launch.py -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/launch
+copying urdf/Urdf_model.gazebo -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/urdf
+copying urdf/Urdf_model.trans -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/urdf
+copying urdf/Urdf_model.xacro -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/urdf
+copying urdf/materials.xacro -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/urdf
+copying meshes/base_link.stl -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/meshes
+copying meshes/rplidar_a1_1.stl -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/meshes
+copying meshes/left_wheel_1.stl -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/meshes
+copying meshes/right_wheel_1.stl -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/meshes
+copying meshes/oak_d_lite_cam_1.stl -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/meshes
+copying config/nav2_params.yaml -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/config
+copying config/oak_pcl.yaml -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/config
+copying config/display.rviz -> /home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/config
+running install_egg_info
+Copying ../../build/Urdf_model_description/Urdf_model_description.egg-info to /home/robotics_lab/ros2_ws/install/Urdf_model_description/lib/python3.10/site-packages/Urdf_model_description-0.0.0-py3.10.egg-info
+running install_scripts
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+writing list of installed files to '/home/robotics_lab/ros2_ws/build/Urdf_model_description/install.log'

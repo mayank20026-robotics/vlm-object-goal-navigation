@@ -1,0 +1,4 @@
+[console_scripts]
+oakd_spatial_node = oak_object_detection.oakd_spatial_node:main
+vlm_depth_commander = oak_object_detection.vlm_depth_commander:main
+

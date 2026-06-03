@@ -1,0 +1,31 @@
+[4.119s] Invoking command in '/home/robotics_lab/ros2_ws/build/ros2toarduino': PYTHONPATH=/home/robotics_lab/ros2_ws/build/ros2toarduino/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/ros2toarduino/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics_lab/ros2_ws/build/ros2toarduino/build
+[4.731s] running develop
+[5.220s] Removing /home/robotics_lab/ros2_ws/install/ros2toarduino/lib/python3.10/site-packages/ros2toarduino.egg-link (link to .)
+[5.359s] Invoked command in '/home/robotics_lab/ros2_ws/build/ros2toarduino' returned '0': PYTHONPATH=/home/robotics_lab/ros2_ws/build/ros2toarduino/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/ros2toarduino/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics_lab/ros2_ws/build/ros2toarduino/build
+[5.362s] Invoking command in '/home/robotics_lab/ros2_ws/src/ros2toarduino': PYTHONPATH=/home/robotics_lab/ros2_ws/build/ros2toarduino/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/ros2toarduino/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2toarduino build --build-base /home/robotics_lab/ros2_ws/build/ros2toarduino/build install --record /home/robotics_lab/ros2_ws/build/ros2toarduino/install.log --single-version-externally-managed install_data --force
+[5.914s] running egg_info
+[5.916s] writing ../../build/ros2toarduino/ros2toarduino.egg-info/PKG-INFO
+[5.916s] writing dependency_links to ../../build/ros2toarduino/ros2toarduino.egg-info/dependency_links.txt
+[5.917s] writing entry points to ../../build/ros2toarduino/ros2toarduino.egg-info/entry_points.txt
+[5.917s] writing requirements to ../../build/ros2toarduino/ros2toarduino.egg-info/requires.txt
+[5.917s] writing top-level names to ../../build/ros2toarduino/ros2toarduino.egg-info/top_level.txt
+[5.922s] reading manifest file '../../build/ros2toarduino/ros2toarduino.egg-info/SOURCES.txt'
+[5.924s] writing manifest file '../../build/ros2toarduino/ros2toarduino.egg-info/SOURCES.txt'
+[5.924s] running build
+[5.925s] running build_py
+[5.925s] running install
+[5.926s] running install_lib
+[5.928s] creating /home/robotics_lab/ros2_ws/install/ros2toarduino/lib/python3.10/site-packages/ros2toarduino
+[5.928s] copying /home/robotics_lab/ros2_ws/build/ros2toarduino/build/lib/ros2toarduino/__init__.py -> /home/robotics_lab/ros2_ws/install/ros2toarduino/lib/python3.10/site-packages/ros2toarduino
+[5.929s] copying /home/robotics_lab/ros2_ws/build/ros2toarduino/build/lib/ros2toarduino/cmd_vel_serial_bridge.py -> /home/robotics_lab/ros2_ws/install/ros2toarduino/lib/python3.10/site-packages/ros2toarduino
+[5.930s] byte-compiling /home/robotics_lab/ros2_ws/install/ros2toarduino/lib/python3.10/site-packages/ros2toarduino/__init__.py to __init__.cpython-310.pyc
+[5.931s] byte-compiling /home/robotics_lab/ros2_ws/install/ros2toarduino/lib/python3.10/site-packages/ros2toarduino/cmd_vel_serial_bridge.py to cmd_vel_serial_bridge.cpython-310.pyc
+[5.932s] running install_data
+[5.933s] copying resource/ros2toarduino -> /home/robotics_lab/ros2_ws/install/ros2toarduino/share/ament_index/resource_index/packages
+[5.933s] copying package.xml -> /home/robotics_lab/ros2_ws/install/ros2toarduino/share/ros2toarduino
+[5.934s] running install_egg_info
+[5.939s] Copying ../../build/ros2toarduino/ros2toarduino.egg-info to /home/robotics_lab/ros2_ws/install/ros2toarduino/lib/python3.10/site-packages/ros2toarduino-0.0.0-py3.10.egg-info
+[5.941s] running install_scripts
+[5.989s] Installing cmd_vel_bridge script to /home/robotics_lab/ros2_ws/install/ros2toarduino/lib/ros2toarduino
+[5.989s] writing list of installed files to '/home/robotics_lab/ros2_ws/build/ros2toarduino/install.log'
+[6.097s] Invoked command in '/home/robotics_lab/ros2_ws/src/ros2toarduino' returned '0': PYTHONPATH=/home/robotics_lab/ros2_ws/build/ros2toarduino/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/ros2toarduino/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2toarduino build --build-base /home/robotics_lab/ros2_ws/build/ros2toarduino/build install --record /home/robotics_lab/ros2_ws/build/ros2toarduino/install.log --single-version-externally-managed install_data --force

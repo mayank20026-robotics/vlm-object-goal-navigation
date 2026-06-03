@@ -1,0 +1,28 @@
+[4.159s] Invoking command in '/home/robotics_lab/ros2_ws/build/navigation_pkg': PYTHONPATH=/home/robotics_lab/ros2_ws/build/navigation_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/navigation_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics_lab/ros2_ws/build/navigation_pkg/build
+[4.758s] running develop
+[5.225s] Removing /home/robotics_lab/ros2_ws/install/navigation_pkg/lib/python3.10/site-packages/navigation-pkg.egg-link (link to .)
+[5.336s] Invoked command in '/home/robotics_lab/ros2_ws/build/navigation_pkg' returned '0': PYTHONPATH=/home/robotics_lab/ros2_ws/build/navigation_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/navigation_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics_lab/ros2_ws/build/navigation_pkg/build
+[5.342s] Invoking command in '/home/robotics_lab/ros2_ws/src/navigation_pkg': PYTHONPATH=/home/robotics_lab/ros2_ws/build/navigation_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/navigation_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation_pkg build --build-base /home/robotics_lab/ros2_ws/build/navigation_pkg/build install --record /home/robotics_lab/ros2_ws/build/navigation_pkg/install.log --single-version-externally-managed install_data --force
+[5.915s] running egg_info
+[5.917s] writing ../../build/navigation_pkg/navigation_pkg.egg-info/PKG-INFO
+[5.918s] writing dependency_links to ../../build/navigation_pkg/navigation_pkg.egg-info/dependency_links.txt
+[5.918s] writing entry points to ../../build/navigation_pkg/navigation_pkg.egg-info/entry_points.txt
+[5.918s] writing requirements to ../../build/navigation_pkg/navigation_pkg.egg-info/requires.txt
+[5.918s] writing top-level names to ../../build/navigation_pkg/navigation_pkg.egg-info/top_level.txt
+[5.923s] reading manifest file '../../build/navigation_pkg/navigation_pkg.egg-info/SOURCES.txt'
+[5.925s] writing manifest file '../../build/navigation_pkg/navigation_pkg.egg-info/SOURCES.txt'
+[5.925s] running build
+[5.925s] running build_py
+[5.926s] running install
+[5.926s] running install_lib
+[5.928s] creating /home/robotics_lab/ros2_ws/install/navigation_pkg/lib/python3.10/site-packages/navigation_pkg
+[5.929s] copying /home/robotics_lab/ros2_ws/build/navigation_pkg/build/lib/navigation_pkg/__init__.py -> /home/robotics_lab/ros2_ws/install/navigation_pkg/lib/python3.10/site-packages/navigation_pkg
+[5.930s] byte-compiling /home/robotics_lab/ros2_ws/install/navigation_pkg/lib/python3.10/site-packages/navigation_pkg/__init__.py to __init__.cpython-310.pyc
+[5.930s] running install_data
+[5.930s] copying resource/navigation_pkg -> /home/robotics_lab/ros2_ws/install/navigation_pkg/share/ament_index/resource_index/packages
+[5.931s] copying package.xml -> /home/robotics_lab/ros2_ws/install/navigation_pkg/share/navigation_pkg
+[5.931s] running install_egg_info
+[5.936s] Copying ../../build/navigation_pkg/navigation_pkg.egg-info to /home/robotics_lab/ros2_ws/install/navigation_pkg/lib/python3.10/site-packages/navigation_pkg-0.0.0-py3.10.egg-info
+[5.938s] running install_scripts
+[5.984s] writing list of installed files to '/home/robotics_lab/ros2_ws/build/navigation_pkg/install.log'
+[6.079s] Invoked command in '/home/robotics_lab/ros2_ws/src/navigation_pkg' returned '0': PYTHONPATH=/home/robotics_lab/ros2_ws/build/navigation_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics_lab/ros2_ws/install/navigation_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation_pkg build --build-base /home/robotics_lab/ros2_ws/build/navigation_pkg/build install --record /home/robotics_lab/ros2_ws/build/navigation_pkg/install.log --single-version-externally-managed install_data --force
