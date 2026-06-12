@@ -1,3 +1,0 @@
-/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
-  warnings.warn(
-error: [Errno 2] No such file or directory: '/home/robotics_lab/ros2_ws/install/Urdf_model_description/share/Urdf_model_description/config/oak_pcl.yaml'

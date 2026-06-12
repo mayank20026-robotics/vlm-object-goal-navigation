@@ -1,5 +1,0 @@
-[console_scripts]
-diff_drive_bridge = diff_drive_bridge.diff_drive_bridge:main
-noodom_diff_drive_bridge = diff_drive_bridge.noodom_diff_drive_bridge:main
-scan_rotator = diff_drive_bridge.scan_rotator:main
-

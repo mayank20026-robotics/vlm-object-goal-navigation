@@ -1,3 +1,0 @@
-[console_scripts]
-cmd_vel_bridge = ros2toarduino.cmd_vel_serial_bridge:main
-
